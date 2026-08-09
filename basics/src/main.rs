@@ -1,11 +1,12 @@
 //! Hint: main.rs is not included in the generated API documentation!
 
-// find the module called print.rs
-mod array;
+mod arrays;
 mod operators;
 mod primitives;
+// find the module called print.rs
 mod print;
-mod tuple;
+mod structs;
+mod tuples;
 
 /// Hint: anything in main.rs is usually not included in the generated API documentation!
 fn add(a: i32, b: i32) -> i32 {
@@ -29,6 +30,7 @@ fn main() {
     print_demo!();
     primitives_demo!();
     operators_demo!();
-    tuple_demo!();
-    array_demo!();
+    tuples_demo!();
+    arrays_demo!();
+    structs_demo!();
 }

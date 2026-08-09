@@ -1,5 +1,5 @@
 #[macro_export]
-macro_rules! array_demo {
+macro_rules! arrays_demo {
     () => {
         fn array_information(arr: &[i32]) {
             if (arr.len() > 0) {
@@ -28,8 +28,8 @@ macro_rules! array_demo {
         println!("arr2 occupies {} bytes", mem::size_of_val(&arr2));
 
         // Slice the array
-        println!("arr[1 .. 4]: {:?}", &arr[1 .. 4]);
-        array_information(&arr[1 .. 4]);
+        println!("arr[1 .. 4]: {:?}", &arr[1..4]);
+        array_information(&arr[1..4]);
 
         // Using get arrays can be safley accessed since that returns an Option(Some or None)
         for i in 0..arr.len() + 1 {

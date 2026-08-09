@@ -1,5 +1,5 @@
 #[macro_export]
-macro_rules! tuple_demo {
+macro_rules! tuples_demo {
     () => {
         // Typed tuples as function argument/return value
         fn reverse(pair: (i32, bool)) -> (bool, i32) {
