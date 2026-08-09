@@ -1,7 +1,5 @@
 # Rust
 
-This document tracks information about Rust since this is my first project written in that language.
-
 ## Setup
 
 1. Install `rustup` via the official package manager
@@ -150,6 +148,14 @@ cargo test
 
   test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
   ```
+
+### Documentation
+
+```sh
+cargo doc
+# serve generated HTML documentation
+python -m http.server -d target/doc
+```
 
 ### Other
 

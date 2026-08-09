@@ -1,6 +1,15 @@
+//! Hint: main.rs is not included in the generated API documentation!
+
+/// Hint: anything in main.rs is usually not included in the generated API documentation!
 fn add(a: i32, b: i32) -> i32 {
     a + b
 }
+
+// Single line comment
+
+/*
+ * Multiline comment
+ */
 
 fn main() {
     #[cfg(debug_assertions)]
@@ -9,14 +18,4 @@ fn main() {
     println!("release");
 
     println!("{}", add(2, 3));
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn adds_two_numbers() {
-        assert_eq!(add(2, 3), 5);
-    }
 }
