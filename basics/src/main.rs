@@ -1,5 +1,10 @@
 //! Hint: main.rs is not included in the generated API documentation!
 
+// find the module called print.rs
+mod operators;
+mod primitives;
+mod print;
+
 /// Hint: anything in main.rs is usually not included in the generated API documentation!
 fn add(a: i32, b: i32) -> i32 {
     a + b
@@ -18,4 +23,8 @@ fn main() {
     println!("release");
 
     println!("{}", add(2, 3));
+
+    print_demo!();
+    primitives_demo!();
+    operators_demo!();
 }
