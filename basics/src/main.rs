@@ -10,9 +10,11 @@
 mod arrays;
 mod constants;
 mod enums;
+mod expressions;
 mod operators;
 mod primitives;
 // find the module called print.rs
+mod flow_control;
 mod print;
 mod strings;
 mod structs;
@@ -37,22 +39,26 @@ fn main() {
 
     println!("{}", add(2, 3));
 
-    println!("-----------[    print_demo    ]-----------");
+    println!("-----------[     print_demo     ]-----------");
     print_demo!();
-    println!("-----------[ primitives_demo  ]-----------");
+    println!("-----------[  primitives_demo   ]-----------");
     primitives_demo!();
-    println!("-----------[ operators_demo   ]-----------");
+    println!("-----------[  operators_demo    ]-----------");
     operators_demo!();
-    println!("-----------[    tuples_demo   ]-----------");
+    println!("-----------[     tuples_demo    ]-----------");
     tuples_demo!();
-    println!("-----------[    arrays_demo   ]-----------");
+    println!("-----------[     arrays_demo    ]-----------");
     arrays_demo!();
-    println!("-----------[   structs_demo   ]-----------");
+    println!("-----------[    structs_demo    ]-----------");
     structs_demo!();
-    println!("-----------[    enums_demo    ]-----------");
+    println!("-----------[     enums_demo     ]-----------");
     enums_demo!();
-    println!("-----------[  constants_demo  ]-----------");
+    println!("-----------[   constants_demo   ]-----------");
     constants_demo!();
-    println!("-----------[   strings_demo   ]-----------");
+    println!("-----------[    strings_demo    ]-----------");
     strings_demo!();
+    println!("-----------[  expressions_demo  ]-----------");
+    expressions_demo!();
+    println!("-----------[ flow_control_demo  ]-----------");
+    flow_control_demo!();
 }
