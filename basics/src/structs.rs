@@ -46,6 +46,9 @@ macro_rules! structs_demo {
             top_left: Point(5, 0),
             bottom_right: Point(10, 0),
         };
-        println!("Rectangle {:?} [{:?}, {:?}]", rectangle, rectangle.top_left, rectangle.bottom_right);
+        println!(
+            "Rectangle {:?} [{:?}, {:?}]",
+            rectangle, rectangle.top_left, rectangle.bottom_right
+        );
     };
 }
