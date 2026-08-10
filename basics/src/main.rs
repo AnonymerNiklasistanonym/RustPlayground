@@ -7,14 +7,15 @@
 // do not warn if assigned values are not being read
 #![allow(unused_assignments)]
 
+// find the module called arrays.rs
 mod arrays;
 mod constants;
 mod enums;
 mod expressions;
-mod operators;
-mod primitives;
-// find the module called print.rs
 mod flow_control;
+mod operators;
+mod pointers;
+mod primitives;
 mod print;
 mod strings;
 mod structs;
@@ -61,4 +62,6 @@ fn main() {
     expressions_demo!();
     println!("-----------[ flow_control_demo  ]-----------");
     flow_control_demo!();
+    println!("-----------[   pointers_demo    ]-----------");
+    pointers_demo!();
 }
