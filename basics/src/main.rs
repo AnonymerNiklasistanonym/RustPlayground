@@ -14,6 +14,7 @@ mod operators;
 mod primitives;
 // find the module called print.rs
 mod print;
+mod strings;
 mod structs;
 mod tuples;
 
@@ -52,4 +53,6 @@ fn main() {
     enums_demo!();
     println!("-----------[  constants_demo  ]-----------");
     constants_demo!();
+    println!("-----------[   strings_demo   ]-----------");
+    strings_demo!();
 }
